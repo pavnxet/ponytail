@@ -1,20 +1,21 @@
 # Repository Agent Instructions
 
-## Mandatory Ponytail Workflow
+This repository is an **instruction-only Ponytail knowledge base**.
 
-This repository contains the Ponytail methodology and its skills. When working on this repository, always use the Ponytail skills and follow the repository's Ponytail instructions before making changes.
+## Mandatory behavior
 
-### Required behavior
+- Always use the canonical Ponytail skills when working on this repository.
+- The single source of truth is `ponytail/skills/`.
+- Read the applicable skill before changing it or changing repository instructions.
+- Do not recreate platform-specific copies, plugin manifests, MCP server code,
+  installation guides, build tooling, benchmarks, or deployment infrastructure.
+- MCP behavior belongs in `ponytail/skills/ponytail-mcp/SKILL.md`; keep it as
+  instructions only.
+- Preserve the methodology, remove duplication, and prefer concise reusable
+  instructions over explanatory or operational material.
 
-- Treat Ponytail as the default and mandatory workflow for work in this repository.
-- Before implementing a task, inspect and follow the applicable Ponytail instructions/skills under `ponytail/`.
-- Use the appropriate Ponytail skill(s) for planning, implementation, review, auditing, testing, security, and verification as applicable.
-- Do not bypass the Ponytail workflow merely because a task appears small or straightforward.
-- Preserve the existing Ponytail methodology and its supporting integrations unless the task explicitly requires changing them.
-- After changes, review and verify the result using the relevant Ponytail process before considering the task complete.
+## Repository scope
 
-## Important Path Change
-
-All former repository-root files and directories have been moved under `ponytail/`. The repository root intentionally contains this `agents.md` file plus the `ponytail/` directory.
-
-When a task refers to the original Ponytail project files, look under `ponytail/`.
+Keep only material that teaches an AI agent **how Ponytail should behave** or
+how its canonical skills should be used. If a file does not contribute to that
+purpose, it should not be added back.
